@@ -29,8 +29,8 @@ apply plugin: 'maven-publish'
 
 
 version = "${mc_version}-${mod_version}"
-group = 'com.hollingsworth.an_addon' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'an_addon'
+group = 'com.pyroshiv.ars_abyssaux' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'ars_abyssaux'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 minecraft {
@@ -151,7 +151,8 @@ dependencies {
     implementation("com.github.llamalad7.mixinextras:mixinextras-forge:0.2.0-beta.8")
 
     annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
-
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
 
 
@@ -189,6 +190,9 @@ publishing {
     }
 }
 
+test {
+    useJUnitPlatform()
+}
 
 // Prevent Mixin annotation processor from getting into IDEA's annotation processor settings
 // Copied from Botania

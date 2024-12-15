@@ -1,0 +1,8 @@
+{
+	"ars_abyssaux.glyph_desc.glyph_test": "This is my test!",
+	"an_addon.glyph_name.glyph_test": "Test",
+
+	"block.ars_abyssaux.drain_jar": "Drain Jar",
+
+	"ars_abyssaux.drain_jar.fullness": "%d%% full"
+}

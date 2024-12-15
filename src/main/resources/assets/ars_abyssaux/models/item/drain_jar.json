@@ -1,0 +1,71 @@
+{
+  "parent": "ars_abyssaux:block/drain_jar/drain_jar0",
+  "overrides": [
+    {
+      "predicate": {
+        "ars_abyssaux:drain": 0.01
+      },
+      "model": "ars_abyssaux:block/drain_jar/drain_jar_sliver"
+    },
+    {
+      "predicate": {
+        "ars_abyssaux:drain": 0.10
+      },
+      "model": "ars_abyssaux:block/drain_jar/drain_jar10"
+    },
+    {
+      "predicate": {
+        "ars_abyssaux:drain": 0.20
+      },
+      "model": "ars_abyssaux:block/drain_jar/drain_jar20"
+    },
+    {
+      "predicate": {
+        "ars_abyssaux:drain": 0.30
+      },
+      "model": "ars_abyssaux:block/drain_jar/drain_jar30"
+    },
+    {
+      "predicate": {
+        "ars_abyssaux:drain": 0.40
+      },
+      "model": "ars_abyssaux:block/drain_jar/drain_jar40"
+    },
+    {
+      "predicate": {
+        "ars_abyssaux:drain": 0.50
+      },
+      "model": "ars_abyssaux:block/drain_jar/drain_jar50"
+    },
+    {
+      "predicate": {
+        "ars_abyssaux:drain": 0.60
+      },
+      "model": "ars_abyssaux:block/drain_jar/drain_jar60"
+    },
+    {
+      "predicate": {
+        "ars_abyssaux:drain": 0.70
+      },
+      "model": "ars_abyssaux:block/drain_jar/drain_jar70"
+    },
+    {
+      "predicate": {
+        "ars_abyssaux:drain": 0.80
+      },
+      "model": "ars_abyssaux:block/drain_jar/drain_jar80"
+    },
+    {
+      "predicate": {
+        "ars_abyssaux:drain": 0.90
+      },
+      "model": "ars_abyssaux:block/drain_jar/drain_jar90"
+    },
+    {
+      "predicate": {
+        "ars_abyssaux:drain": 1.00
+      },
+      "model": "ars_abyssaux:block/drain_jar/drain_jar100"
+    }
+  ]
+}
