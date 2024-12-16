@@ -23,7 +23,7 @@ import java.util.logging.Logger;
 import static com.pyroshiv.arsabyssaux.common.util.BlockUtils.getBlockByName;
 import static com.pyroshiv.arsabyssaux.common.util.BlockUtils.getBlockName;
 
-public class CorrupterTile extends AbstractSourceMachine implements ITooltipProvider, ITickable {
+public class CorrupterTile extends AbstractDrainMachine implements ITooltipProvider, ITickable {
 
     private CorruptingEnum corruptingEnum;
     public boolean draining;
