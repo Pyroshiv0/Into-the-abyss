@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "into_the_abyss:block/padauk_planks",
+    "top": "into_the_abyss:block/padauk_planks",
+    "side": "into_the_abyss:block/padauk_planks"
+  },
+  "render_type": "solid"
+}

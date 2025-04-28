@@ -1,0 +1,299 @@
+{
+  "mod_elements": [
+    {
+      "name": "Abyssblocks",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abyssblocks",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "HotSand",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hot_sand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/into_the_abyss/models/item/hot_sand.json",
+          "src/main/resources/assets/into_the_abyss/models/block/hot_sand.json",
+          "src/main/java/com/pyroshiv/intotheabyss/block/HotSandBlock.java",
+          "src/main/resources/data/into_the_abyss/loot_tables/blocks/hot_sand.json",
+          "src/main/resources/assets/into_the_abyss/blockstates/hot_sand.json"
+        ]
+      },
+      "path": "~/modblocks"
+    },
+    {
+      "name": "HotSandstoneTiles",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hot_sandstone_tiles",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/into_the_abyss/loot_tables/blocks/hot_sandstone_tiles.json",
+          "src/main/resources/assets/into_the_abyss/blockstates/hot_sandstone_tiles.json",
+          "src/main/resources/assets/into_the_abyss/models/block/hot_sandstone_tiles.json",
+          "src/main/java/com/pyroshiv/intotheabyss/block/HotSandstoneTilesBlock.java",
+          "src/main/resources/assets/into_the_abyss/models/item/hot_sandstone_tiles.json"
+        ]
+      },
+      "path": "~/modblocks"
+    },
+    {
+      "name": "HotSandstone",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hot_sandstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/into_the_abyss/models/item/hot_sandstone.json",
+          "src/main/java/com/pyroshiv/intotheabyss/block/HotSandstoneBlock.java",
+          "src/main/resources/assets/into_the_abyss/models/block/hot_sandstone.json",
+          "src/main/resources/data/into_the_abyss/loot_tables/blocks/hot_sandstone.json",
+          "src/main/resources/assets/into_the_abyss/blockstates/hot_sandstone.json"
+        ]
+      },
+      "path": "~/modblocks"
+    },
+    {
+      "name": "PadaukLog",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "padauk_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_log.json",
+          "src/main/java/com/pyroshiv/intotheabyss/block/PadaukLogBlock.java",
+          "src/main/resources/assets/into_the_abyss/models/item/padauk_log.json",
+          "src/main/resources/assets/into_the_abyss/blockstates/padauk_log.json",
+          "src/main/resources/data/into_the_abyss/loot_tables/blocks/padauk_log.json"
+        ]
+      },
+      "path": "~/modblocks"
+    },
+    {
+      "name": "PadaukPlanks",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "padauk_planks",
+      "metadata": {
+        "files": [
+          "src/main/java/com/pyroshiv/intotheabyss/block/PadaukPlanksBlock.java",
+          "src/main/resources/assets/into_the_abyss/models/item/padauk_planks.json",
+          "src/main/resources/assets/into_the_abyss/blockstates/padauk_planks.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_planks.json",
+          "src/main/resources/data/into_the_abyss/loot_tables/blocks/padauk_planks.json"
+        ]
+      },
+      "path": "~/modblocks"
+    },
+    {
+      "name": "PadaukDoor",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "padauk_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/into_the_abyss/blockstates/padauk_door.json",
+          "src/main/resources/data/into_the_abyss/loot_tables/blocks/padauk_door.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_door_bottom_left.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_door_top_left.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_door_bottom_left_open.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_door_bottom_right_open.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_door_bottom_right.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_door_top_left_open.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_door_top_right_open.json",
+          "src/main/java/com/pyroshiv/intotheabyss/block/PadaukDoorBlock.java",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_door_top_right.json",
+          "src/main/resources/assets/into_the_abyss/models/item/padauk_door.json"
+        ]
+      },
+      "path": "~/modblocks"
+    },
+    {
+      "name": "PadaukTrapdoor",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "padauk_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/into_the_abyss/loot_tables/blocks/padauk_trapdoor.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_trapdoor_open.json",
+          "src/main/resources/assets/into_the_abyss/models/item/padauk_trapdoor.json",
+          "src/main/java/com/pyroshiv/intotheabyss/block/PadaukTrapdoorBlock.java",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_trapdoor.json",
+          "src/main/resources/assets/into_the_abyss/blockstates/padauk_trapdoor.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_trapdoor_top.json"
+        ]
+      },
+      "path": "~/modblocks"
+    },
+    {
+      "name": "PadaukStairs",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "padauk_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_stairs_outer.json",
+          "src/main/resources/data/into_the_abyss/loot_tables/blocks/padauk_stairs.json",
+          "src/main/java/com/pyroshiv/intotheabyss/block/PadaukStairsBlock.java",
+          "src/main/resources/assets/into_the_abyss/blockstates/padauk_stairs.json",
+          "src/main/resources/assets/into_the_abyss/models/item/padauk_stairs.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_stairs.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_stairs_inner.json"
+        ]
+      },
+      "path": "~/modblocks"
+    },
+    {
+      "name": "PadaukSlab",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "padauk_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_slab_top.json",
+          "src/main/java/com/pyroshiv/intotheabyss/block/PadaukSlabBlock.java",
+          "src/main/resources/assets/into_the_abyss/blockstates/padauk_slab.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_slab.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_slab_full.json",
+          "src/main/resources/data/into_the_abyss/loot_tables/blocks/padauk_slab.json",
+          "src/main/resources/assets/into_the_abyss/models/item/padauk_slab.json"
+        ]
+      },
+      "path": "~/modblocks"
+    },
+    {
+      "name": "PadaukFence",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "padauk_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_fence_inventory.json",
+          "src/main/resources/assets/into_the_abyss/models/item/padauk_fence.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_fence_post.json",
+          "src/main/resources/assets/into_the_abyss/blockstates/padauk_fence.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_fence.json",
+          "src/main/resources/data/into_the_abyss/loot_tables/blocks/padauk_fence.json",
+          "src/main/java/com/pyroshiv/intotheabyss/block/PadaukFenceBlock.java"
+        ]
+      },
+      "path": "~/modblocks"
+    },
+    {
+      "name": "PadaukFenceGate",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "padauk_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_fence_gate_wall_open.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_fence_gate.json",
+          "src/main/java/com/pyroshiv/intotheabyss/block/PadaukFenceGateBlock.java",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_fence_gate_open.json",
+          "src/main/resources/assets/into_the_abyss/models/item/padauk_fence_gate.json",
+          "src/main/resources/assets/into_the_abyss/models/block/padauk_fence_gate_wall.json",
+          "src/main/resources/data/into_the_abyss/loot_tables/blocks/padauk_fence_gate.json",
+          "src/main/resources/assets/into_the_abyss/blockstates/padauk_fence_gate.json"
+        ]
+      },
+      "path": "~/modblocks"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:HotSandstoneTiles",
+      "~CUSTOM:HotSandstone"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:PadaukStairs",
+      "~CUSTOM:PadaukTrapdoor",
+      "~CUSTOM:PadaukDoor",
+      "~CUSTOM:PadaukPlanks",
+      "~CUSTOM:PadaukLog"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:PadaukSlab"
+    ],
+    "BLOCKS:minecraft:fences": [
+      "~CUSTOM:PadaukFence"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:HotSand"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:PadaukStairs"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item_group.into_the_abyss.abyssblocks": "Abyss blocks",
+      "block.into_the_abyss.padauk_planks": "Padauk Planks",
+      "block.into_the_abyss.padauk_log": "Padauk Log",
+      "block.into_the_abyss.hot_sandstone_tiles": "Hot Sandstone Tiles",
+      "block.into_the_abyss.padauk_fence_gate": "Padauk Fence Gate",
+      "block.into_the_abyss.hot_sandstone": "Hot Sandstone",
+      "block.into_the_abyss.padauk_trapdoor": "Padauk Trapdoor",
+      "block.into_the_abyss.padauk_fence": "Padauk Fence",
+      "block.into_the_abyss.padauk_slab": "Padauk Slab",
+      "block.into_the_abyss.padauk_door": "Padauk Door",
+      "block.into_the_abyss.padauk_stairs": "Padauk Stairs",
+      "block.into_the_abyss.hot_sand": "Hot Sand"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "modblocks",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "into_the_abyss",
+    "modName": "Into the abyss",
+    "version": "1.0.0",
+    "author": "eaubr, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.20.4",
+    "modElementsPackage": "com.pyroshiv.intotheabyss"
+  },
+  "mcreatorVersion": 202400117319
+}

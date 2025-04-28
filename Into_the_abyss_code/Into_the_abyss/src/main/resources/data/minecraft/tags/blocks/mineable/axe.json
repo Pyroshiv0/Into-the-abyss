@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "into_the_abyss:padauk_stairs",
+    "into_the_abyss:padauk_trapdoor",
+    "into_the_abyss:padauk_door",
+    "into_the_abyss:padauk_planks",
+    "into_the_abyss:padauk_log"
+  ]
+}

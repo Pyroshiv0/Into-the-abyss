@@ -1,0 +1,3 @@
+/locate biome minecraft:desert
+/tp @s -1837 98 -1877
+/time set day
