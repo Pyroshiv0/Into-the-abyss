@@ -1,0 +1,27 @@
+{
+  "type": "into_the_abyss:the_abyss",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": 123456789,
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "into_the_abyss:volcano_crater",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": 0,
+            "weirdness": 0,
+            "erosion": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        }
+      ]
+    },
+    "settings": "into_the_abyss:the_abyss"
+
+
+  }
+}

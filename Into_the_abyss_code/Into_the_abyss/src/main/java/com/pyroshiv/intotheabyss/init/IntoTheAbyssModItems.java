@@ -14,6 +14,8 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import com.pyroshiv.intotheabyss.item.TemporaryAbyssItem;
+import com.pyroshiv.intotheabyss.item.SulfuricWaterItem;
 import com.pyroshiv.intotheabyss.IntoTheAbyssMod;
 
 public class IntoTheAbyssModItems {
@@ -29,6 +31,18 @@ public class IntoTheAbyssModItems {
 	public static final DeferredHolder<Item, Item> PADAUK_SLAB = block(IntoTheAbyssModBlocks.PADAUK_SLAB);
 	public static final DeferredHolder<Item, Item> PADAUK_FENCE = block(IntoTheAbyssModBlocks.PADAUK_FENCE);
 	public static final DeferredHolder<Item, Item> PADAUK_FENCE_GATE = block(IntoTheAbyssModBlocks.PADAUK_FENCE_GATE);
+	public static final DeferredHolder<Item, Item> PADAUK_BUTTON = block(IntoTheAbyssModBlocks.PADAUK_BUTTON);
+	public static final DeferredHolder<Item, Item> PADAUK_PRESSURE_PLATE = block(IntoTheAbyssModBlocks.PADAUK_PRESSURE_PLATE);
+	public static final DeferredHolder<Item, Item> HOT_STONE = block(IntoTheAbyssModBlocks.HOT_STONE);
+	public static final DeferredHolder<Item, Item> HOT_STONE_SLAB = block(IntoTheAbyssModBlocks.HOT_STONE_SLAB);
+	public static final DeferredHolder<Item, Item> HOT_STONE_STAIRS = block(IntoTheAbyssModBlocks.HOT_STONE_STAIRS);
+	public static final DeferredHolder<Item, Item> HOT_STONE_WALLS = block(IntoTheAbyssModBlocks.HOT_STONE_WALLS);
+	public static final DeferredHolder<Item, Item> HOT_PRESSURE_PLATE = block(IntoTheAbyssModBlocks.HOT_PRESSURE_PLATE);
+	public static final DeferredHolder<Item, Item> PADAUK_DRIED_LEAVES = block(IntoTheAbyssModBlocks.PADAUK_DRIED_LEAVES);
+	public static final DeferredHolder<Item, Item> PADAUK_LEAVES = block(IntoTheAbyssModBlocks.PADAUK_LEAVES);
+	public static final DeferredHolder<Item, Item> PADAUK_WOOD = block(IntoTheAbyssModBlocks.PADAUK_WOOD);
+	public static final DeferredHolder<Item, Item> TEMPORARY_ABYSS = REGISTRY.register("temporary_abyss", () -> new TemporaryAbyssItem());
+	public static final DeferredHolder<Item, Item> SULFURIC_WATER_BUCKET = REGISTRY.register("sulfuric_water_bucket", () -> new SulfuricWaterItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

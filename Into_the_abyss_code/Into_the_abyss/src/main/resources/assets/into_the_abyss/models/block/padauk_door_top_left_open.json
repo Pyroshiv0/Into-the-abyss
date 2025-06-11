@@ -4,5 +4,5 @@
     "bottom": "into_the_abyss:block/padauk_door_bottom",
     "top": "into_the_abyss:block/padauk_door_top"
   },
-  "render_type": "solid"
+  "render_type": "cutout_mipped"
 }

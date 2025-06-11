@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "into_the_abyss:block/hot_stone_slab"
+    },
+    "type=top": {
+      "model": "into_the_abyss:block/hot_stone_slab_top"
+    },
+    "type=double": {
+      "model": "into_the_abyss:block/hot_stone_slab_full"
+    }
+  }
+}

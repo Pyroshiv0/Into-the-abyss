@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "into_the_abyss:block/padauk_pressure_plate"
+    },
+    "powered=true": {
+      "model": "into_the_abyss:block/padauk_pressure_plate_down"
+    }
+  }
+}

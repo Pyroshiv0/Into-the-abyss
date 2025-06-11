@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "into_the_abyss:block/hot_stone",
+    "top": "into_the_abyss:block/hot_stone",
+    "side": "into_the_abyss:block/hot_stone"
+  },
+  "render_type": "solid"
+}

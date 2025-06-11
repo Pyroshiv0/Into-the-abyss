@@ -1,5 +1,6 @@
 package com.pyroshiv.intotheabyss;
 
+import com.pyroshiv.intotheabyss.init.*;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -25,10 +26,6 @@ import java.util.HashMap;
 import java.util.Collection;
 import java.util.ArrayList;
 
-import com.pyroshiv.intotheabyss.init.IntoTheAbyssModTabs;
-import com.pyroshiv.intotheabyss.init.IntoTheAbyssModItems;
-import com.pyroshiv.intotheabyss.init.IntoTheAbyssModBlocks;
-
 @Mod("into_the_abyss")
 public class IntoTheAbyssMod {
 	public static final Logger LOGGER = LogManager.getLogger(IntoTheAbyssMod.class);
@@ -46,6 +43,9 @@ public class IntoTheAbyssMod {
 
 		IntoTheAbyssModTabs.REGISTRY.register(modEventBus);
 
+		IntoTheAbyssModFluids.REGISTRY.register(modEventBus);
+		IntoTheAbyssModFluidTypes.REGISTRY.register(modEventBus);
+		IntoTheAbyssModDimension.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

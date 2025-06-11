@@ -4,5 +4,5 @@
     "texture": "into_the_abyss:block/padauk_trapdoor",
     "particle": "into_the_abyss:block/padauk_trapdoor"
   },
-  "render_type": "solid"
+  "render_type": "cutout_mipped"
 }
