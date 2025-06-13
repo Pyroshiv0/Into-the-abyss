@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[2,)"
-license="Not specified"
+license="All Rights Reserved"
 
 [[mods]]
 modId="into_the_abyss"
@@ -8,7 +8,7 @@ version="1.0.0"
 displayName="Into the abyss"
 displayURL="https://mcreator.net"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="eaubr, MCreator"
+authors="Pyroshiv"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
