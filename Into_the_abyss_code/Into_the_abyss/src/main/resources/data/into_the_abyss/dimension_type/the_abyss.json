@@ -15,14 +15,12 @@
   "logical_height": 2032,
   "infiniburn": "#minecraft:infiniburn_overworld",
   "effects": "into_the_abyss:the_abyss",
-
   "monster_spawn_light_level": {
     "type": "minecraft:uniform",
     "value": {
       "min_inclusive": 0,
       "max_inclusive": 7
     }
-
   },
   "monster_spawn_block_light_limit": 0
 }
