@@ -8,7 +8,7 @@ import net.minecraft.world.entity.player.Player;
 public class PlayerPressureHandler {
 
     // Constantes physiques
-    private static final double DENSITY_OF_AIR =. 10; // kg/m^3 (densité moyenne de l'air pour la pression "terrestre")
+    private static final double DENSITY_OF_AIR = 1.0; // kg/m^3 (densité moyenne de l'air pour la pression "terrestre")
     private static final double GRAVITY = 9.81;            // m/s^2
 
     // Couche Y à partir de laquelle la pression commence
