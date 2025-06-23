@@ -4,6 +4,8 @@
  */
 package com.pyroshiv.intotheabyss.init;
 
+import com.pyroshiv.intotheabyss.item.MeasureItem;
+import net.minecraft.world.damagesource.DamageEffects;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.bus.api.IEventBus;
@@ -16,7 +18,9 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 import com.pyroshiv.intotheabyss.item.TemporaryAbyssItem;
 import com.pyroshiv.intotheabyss.item.SulfuricWaterItem;
+import com.pyroshiv.intotheabyss.item.MeasureItem;
 import com.pyroshiv.intotheabyss.IntoTheAbyssMod;
+import org.w3c.dom.DOMError;
 
 public class IntoTheAbyssModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(BuiltInRegistries.ITEM, IntoTheAbyssMod.MODID);
@@ -43,6 +47,7 @@ public class IntoTheAbyssModItems {
 	public static final DeferredHolder<Item, Item> PADAUK_WOOD = block(IntoTheAbyssModBlocks.PADAUK_WOOD);
 	public static final DeferredHolder<Item, Item> TEMPORARY_ABYSS = REGISTRY.register("temporary_abyss", () -> new TemporaryAbyssItem());
 	public static final DeferredHolder<Item, Item> SULFURIC_WATER_BUCKET = REGISTRY.register("sulfuric_water_bucket", () -> new SulfuricWaterItem());
+	public static final DeferredHolder<Item, Item> MEASURE = REGISTRY.register("measure", () -> new MeasureItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

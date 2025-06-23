@@ -33,5 +33,6 @@
   "block.into_the_abyss.padauk_door": "Padauk Door",
   "item.into_the_abyss.temporary_abyss": "Temporary Abyss Portal Igniter",
   "fluid.into_the_abyss.sulfuric_water": "Sulfuric Water",
-  "biome.into_the_abyss.volcano_crater": "Volcano Crater"
+  "biome.into_the_abyss.volcano_crater": "Volcano Crater",
+  "item.into_the_abyss.measure": "Measure"
 }
