@@ -1,0 +1,18 @@
+{
+  "type": "into_the_abyss:the_abyss",
+  "generator": {
+    "seed": 123456789,
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "into_the_abyss:abyss_biome_source",
+      "volcano_crater": "into_the_abyss:volcano_crater",
+      "underground_jungle": "into_the_abyss:underground_jungle",
+      "abyssal_ocean": "into_the_abyss:abyssal_ocean",
+      "twisted_sea": "into_the_abyss:twisted_sea",
+      "hanging_cliffs": "into_the_abyss:hanging_cliffs",
+      "deep_abyss": "into_the_abyss:deep_abyss",
+      "deepless_void": "into_the_abyss:deepless_void"
+    },
+    "settings": "into_the_abyss:the_abyss"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "into_the_abyss:block/padauk_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "into_the_abyss:block/padauk_log"
+    },
+    "axis=z": {
+      "model": "into_the_abyss:block/padauk_log",
+      "x": 90
+    }
+  }
+}
