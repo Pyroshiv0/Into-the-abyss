@@ -1,6 +1,5 @@
 package com.pyroshiv.intotheabyss;
 
-import com.pyroshiv.intotheabyss.player.PlayerPressureHandler;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -51,8 +50,6 @@ public class IntoTheAbyssMod {
 
 		IntoTheAbyssModFluids.REGISTRY.register(modEventBus);
 		IntoTheAbyssModFluidTypes.REGISTRY.register(modEventBus);
-
-		net.neoforged.neoforge.common.NeoForge.EVENT_BUS.register(new PlayerPressureHandler());
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

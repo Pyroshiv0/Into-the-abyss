@@ -1,12 +1,12 @@
 {
-  "aquifers_enabled": true,
+  "aquifers_enabled": false,
   "default_block": { "Name": "minecraft:stone" },
   "default_fluid": { "Name": "minecraft:water", "Properties": { "level": "0" } },
   "disable_mob_generation": false,
   "legacy_random_source": false,
   "noise": {
-    "height": 2032,
     "min_y": -1776,
+    "height": 2032,
     "size_horizontal": 1,
     "size_vertical": 2
   },
@@ -22,10 +22,6 @@
     "depth": "into_the_abyss:zero_noise_df",
     "ridges": "into_the_abyss:zero_noise_df",
     "initial_density_without_jaggedness": "into_the_abyss:zero_noise_df",
-    "vein_gap": "into_the_abyss:zero_noise_df",
-    "vein_toggle": "into_the_abyss:zero_noise_df",
-    "vein_ridged": "into_the_abyss:zero_noise_df",
-
     "final_density": {
       "type": "minecraft:add",
       "argument1": {
@@ -42,115 +38,75 @@
         "plateau_height": 0.5,
         "base_height": -0.5
       }
-    }
+    },
+    "vein_gap": "into_the_abyss:zero_noise_df",
+    "vein_toggle": "into_the_abyss:zero_noise_df",
+    "vein_ridged": "into_the_abyss:zero_noise_df"
   },
   "ore_veins_enabled": false,
-  "sea_level": 50,
-  "spawn_target": [
-    {
-      "continentalness": [
-        -0.11,
-        1.0
-      ],
-      "depth": 0.0,
-      "erosion": [
-        -1.0,
-        1.0
-      ],
-      "humidity": [
-        -1.0,
-        1.0
-      ],
-      "offset": 0.0,
-      "temperature": [
-        -1.0,
-        1.0
-      ],
-      "weirdness": [
-        -1.0,
-        -0.16
-      ]
-    },
-    {
-      "continentalness": [
-        -0.11,
-        1.0
-      ],
-      "depth": 0.0,
-      "erosion": [
-        -1.0,
-        1.0
-      ],
-      "humidity": [
-        -1.0,
-        1.0
-      ],
-      "offset": 0.0,
-      "temperature": [
-        -1.0,
-        1.0
-      ],
-      "weirdness": [
-        0.16,
-        1.0
-      ]
-    }
-  ],
+  "sea_level": 49,
+  "spawn_target": [],
   "surface_rule": {
-
     "type": "minecraft:sequence",
-
     "sequence": [
-
       {
-
         "type": "minecraft:condition",
-
         "if_true": {
-
-          "type": "minecraft:biome",
-
-          "biome_is": ["into_the_abyss:volcano_crater"]
-
+          "type": "minecraft:stone_depth",
+          "add_surface_depth": false,
+          "offset": 0,
+          "secondary_depth_range": 0,
+          "surface_type": "floor"
         },
-
         "then_run": {
-
-          "type": "minecraft:condition",
-
-          "if_true": {
-
-            "type": "minecraft:noise_threshold",
-
-            "noise": "into_the_abyss:island_noise",
-
-            "min_threshold": 0.05,
-
-            "max_threshold": 1.0
-
-          },
-
-          "then_run": {
-
-            "type": "minecraft:block",
-
-            "result_state": { "Name": "minecraft:sand" }
-
-          }
-
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:noise_threshold",
+                "noise": "minecraft:ore_gap",
+                "min_threshold": -1,
+                "max_threshold": 0.2
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "minecraft:sand"
+                }
+              }
+            },
+            {
+              "type": "minecraft:block",
+              "result_state": {
+                "Name": "minecraft:sandstone"
+              }
+            }
+          ]
         }
-
       },
-
       {
-
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:stone_depth",
+          "add_surface_depth": false,
+          "offset": 1,
+          "secondary_depth_range": 4,
+          "surface_type": "floor"
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "minecraft:smooth_sandstone"
+          }
+        }
+      },
+      {
         "type": "minecraft:block",
-
-        "result_state": { "Name": "minecraft:stone" }
-
+        "result_state": {
+          "Name": "stone"
+        }
       }
-
     ]
-
   }
 }

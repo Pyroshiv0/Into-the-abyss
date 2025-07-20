@@ -1,14 +1,14 @@
 {
-  "has_precipitation": false,
-  "temperature": 2,
-  "downfall": 0,
+  "has_precipitation": true,
+  "temperature": 0.4,
+  "downfall": 0.5,
   "effects": {
-    "foliage_color": -1576309,
-    "grass_color": -4470503,
-    "sky_color": -7581382,
-    "fog_color": -7581382,
-    "water_color": -10742612,
-    "water_fog_color": -14351487
+    "foliage_color": 10387789,
+    "grass_color": 9470285,
+    "sky_color": -3342337,
+    "fog_color": -3342337,
+    "water_color": 4159204,
+    "water_fog_color": 329011
   },
   "spawners": {
     "monster": [],
@@ -41,7 +41,7 @@
     [],
     [],
     [
-      "into_the_abyss:volcano_crater_tree"
+      "into_the_abyss:volcano_beach_tree"
     ],
     []
   ]

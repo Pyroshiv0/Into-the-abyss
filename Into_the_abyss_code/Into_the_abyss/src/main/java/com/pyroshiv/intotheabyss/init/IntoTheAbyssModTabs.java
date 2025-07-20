@@ -45,7 +45,6 @@ public class IntoTheAbyssModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ABYSS_OBJECTS = REGISTRY.register("abyss_objects",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.into_the_abyss.abyss_objects")).icon(() -> new ItemStack(IntoTheAbyssModItems.SULFURIC_WATER_BUCKET.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(IntoTheAbyssModItems.SULFURIC_WATER_BUCKET.get());
-				tabData.accept(IntoTheAbyssModItems.MEASURE.get());
 			})
 
 					.build());
