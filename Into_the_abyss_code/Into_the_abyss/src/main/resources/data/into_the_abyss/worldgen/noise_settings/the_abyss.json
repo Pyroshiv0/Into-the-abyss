@@ -1,0 +1,112 @@
+{
+  "aquifers_enabled": false,
+  "default_block": { "Name": "minecraft:stone" },
+  "default_fluid": { "Name": "minecraft:water", "Properties": { "level": "0" } },
+  "disable_mob_generation": false,
+  "legacy_random_source": false,
+  "noise": {
+    "min_y": -1776,
+    "height": 2032,
+    "size_horizontal": 1,
+    "size_vertical": 2
+  },
+  "noise_router": {
+    "barrier": "into_the_abyss:zero_noise_df",
+    "fluid_level_spread": "into_the_abyss:zero_noise_df",
+    "fluid_level_floodedness": "into_the_abyss:zero_noise_df",
+    "lava": "into_the_abyss:zero_noise_df",
+    "temperature": "into_the_abyss:zero_noise_df",
+    "vegetation": "into_the_abyss:zero_noise_df",
+    "continents": "into_the_abyss:zero_noise_df",
+    "erosion": "into_the_abyss:zero_noise_df",
+    "depth": "into_the_abyss:zero_noise_df",
+    "ridges": "into_the_abyss:zero_noise_df",
+    "initial_density_without_jaggedness": "into_the_abyss:zero_noise_df",
+    "final_density": {
+      "type": "minecraft:add",
+      "argument1": {
+        "type": "minecraft:y_clamped_gradient",
+        "from_y": -64,
+        "to_y": 50,
+        "from_value": 1.0,
+        "to_value": -0.5
+      },
+      "argument2": {
+        "type": "into_the_abyss:island_shape",
+        "outer_radius": 1200.0,
+        "plateau_radius": 1000.0,
+        "plateau_height": 0.5,
+        "base_height": -0.5
+      }
+    },
+    "vein_gap": "into_the_abyss:zero_noise_df",
+    "vein_toggle": "into_the_abyss:zero_noise_df",
+    "vein_ridged": "into_the_abyss:zero_noise_df"
+  },
+  "ore_veins_enabled": false,
+  "sea_level": 49,
+  "spawn_target": [],
+  "surface_rule": {
+    "type": "minecraft:sequence",
+    "sequence": [
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:stone_depth",
+          "add_surface_depth": false,
+          "offset": 0,
+          "secondary_depth_range": 0,
+          "surface_type": "floor"
+        },
+        "then_run": {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:noise_threshold",
+                "noise": "minecraft:ore_gap",
+                "min_threshold": -1,
+                "max_threshold": 0.2
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "minecraft:sand"
+                }
+              }
+            },
+            {
+              "type": "minecraft:block",
+              "result_state": {
+                "Name": "minecraft:sandstone"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:stone_depth",
+          "add_surface_depth": false,
+          "offset": 1,
+          "secondary_depth_range": 4,
+          "surface_type": "floor"
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "minecraft:smooth_sandstone"
+          }
+        }
+      },
+      {
+        "type": "minecraft:block",
+        "result_state": {
+          "Name": "stone"
+        }
+      }
+    ]
+  }
+}
