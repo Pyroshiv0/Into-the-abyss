@@ -13,7 +13,7 @@ import java.util.stream.Stream;
 
 public class AbyssBiomeSource extends BiomeSource {
     private static final int volcanoRadius=900;
-    private static final int adaptedVolcanoRadius=(volcanoRadius^ 2)/4;// on divise volcanoRadius par 4 car chaque x =4 correspond à x=1 dans les coordonées de jeu
+    private static final int adaptedVolcanoRadius=(volcanoRadius*4)^ 2;// on divise volcanoRadius par 4 car chaque x =4 correspond à x=1 dans les coordonées de jeu
     public static final Codec<AbyssBiomeSource> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Biome.CODEC.fieldOf("volcano_beach").forGetter(bs -> bs.volcanoBeach),
             Biome.CODEC.fieldOf("volcano_crater").forGetter(bs -> bs.volcanoCrater),

@@ -5,6 +5,7 @@
     "type": "minecraft:noise",
     "biome_source": {
       "type": "into_the_abyss:abyss_biome_source",
+      "volcano_beach": "into_the_abyss:volcano_beach",
       "volcano_crater": "into_the_abyss:volcano_crater",
       "underground_jungle": "into_the_abyss:underground_jungle",
       "abyssal_ocean": "into_the_abyss:abyssal_ocean",
