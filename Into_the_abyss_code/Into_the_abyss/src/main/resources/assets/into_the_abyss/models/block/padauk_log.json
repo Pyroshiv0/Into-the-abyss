@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "into_the_abyss:block/padauk_log_top",
+    "up": "into_the_abyss:block/padauk_log_top",
+    "north": "into_the_abyss:block/padauk_log",
+    "east": "into_the_abyss:block/padauk_log",
+    "south": "into_the_abyss:block/padauk_log",
+    "west": "into_the_abyss:block/padauk_log",
+    "particle": "into_the_abyss:block/padauk_log_top"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "into_the_abyss:block/padauk_leaves",
+    "particle": "into_the_abyss:block/padauk_leaves"
+  }
+}

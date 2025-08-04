@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "into_the_abyss:blocks/hot_stone_walls",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "into_the_abyss:hot_stone_walls"
+        }
+      ]
+    }
+  ]
+}
