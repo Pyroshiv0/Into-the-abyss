@@ -2,7 +2,7 @@
   "type": "into_the_abyss:the_abyss",
   "generator": {
     "seed": 123456789,
-    "type": "minecraft:noise",
+    "type": "into_the_abyss:abyss_type",
     "biome_source": {
       "type": "into_the_abyss:abyss_biome_source",
       "volcano_beach": "into_the_abyss:volcano_beach",
