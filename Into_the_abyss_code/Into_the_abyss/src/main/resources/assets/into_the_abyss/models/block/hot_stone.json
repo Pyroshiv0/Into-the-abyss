@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "into_the_abyss:block/hot_stone",
+    "particle": "into_the_abyss:block/hot_stone"
+  },
+  "render_type": "solid"
+}

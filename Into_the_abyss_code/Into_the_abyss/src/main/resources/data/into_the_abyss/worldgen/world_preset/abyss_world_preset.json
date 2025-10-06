@@ -1,0 +1,13 @@
+{
+  "dimensions": {
+    "minecraft:overworld": {
+      "type": "into_the_abyss:abyss_type",
+      "generator": {
+        "type": "into_the_abyss:abyss_chunk_generator",
+        "biome_source": {
+          "type": "into_the_abyss:abyss_biome_source"
+        }
+      }
+    }
+  }
+}
