@@ -34,5 +34,7 @@
   "item.into_the_abyss.temporary_abyss": "Temporary Abyss Portal Igniter",
   "fluid.into_the_abyss.sulfuric_water": "Sulfuric Water",
   "biome.into_the_abyss.volcano_crater": "Volcano Crater",
-  "item.into_the_abyss.measure": "Measure"
+  "item.into_the_abyss.measure": "Measure",
+  "generator.into_the_abyss.the_abyss": "The Abyss"
+
 }

@@ -2,7 +2,9 @@
   "type": "into_the_abyss:the_abyss",
   "generator": {
     "seed": 123456789,
-    "type": "into_the_abyss:abyss_type",
+    "type": "into_the_abyss:abyss_chunk_generator",
+    "world_height": 2032,
+    "sea_level": 49,
     "biome_source": {
       "type": "into_the_abyss:abyss_biome_source",
       "volcano_beach": "into_the_abyss:volcano_beach",

@@ -23,7 +23,7 @@ public class IntoTheAbyssModChunkGenerator {
     public static final DeferredRegister<Codec<? extends ChunkGenerator>> REGISTRY = DeferredRegister.create(BuiltInRegistries.CHUNK_GENERATOR, MODID);
 
     public static final DeferredHolder<Codec<? extends ChunkGenerator>, Codec<? extends ChunkGenerator>> ABYSS_CHUNK_GENERATOR =
-            REGISTRY.register("abyss_chunk_generator", () -> AbyssChunkGenerator.CODEC);
+            REGISTRY.register("abyss_chunk_generator", () -> AbyssChunkGenerator.FULL_CODEC);
 
     public static final ResourceKey<Codec<? extends ChunkGenerator>> ABYSS_CHUNK_GENERATOR_KEY =
             ResourceKey.create(Registries.CHUNK_GENERATOR, new ResourceLocation(MODID, "abyss_chunk_generator"));

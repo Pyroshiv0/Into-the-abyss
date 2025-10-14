@@ -1,6 +1,11 @@
 package com.pyroshiv.intotheabyss;
 
 import com.pyroshiv.intotheabyss.player.PlayerPressureHandler;
+import com.pyroshiv.intotheabyss.worldgen.ChunkGenerators.AbyssChunkGenerator;
+import com.pyroshiv.intotheabyss.worldgen.biomesource.AbyssBiomeSource;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.neoforged.neoforge.registries.RegisterEvent;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -42,6 +47,7 @@ public class IntoTheAbyssMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		modEventBus.addListener(this::onRegister);
 
 		IntoTheAbyssModBlocks.REGISTRY.register(modEventBus);
 
@@ -57,6 +63,17 @@ public class IntoTheAbyssMod {
 		// End of user code block mod init
 	}
 
+	private void onRegister(RegisterEvent event) {
+		// Vérifie le type de registre concerné
+		event.register(BuiltInRegistries.CHUNK_GENERATOR.key(), helper -> {
+			helper.register(new ResourceLocation(IntoTheAbyssMod.MODID, "abyss_chunk_generator"), AbyssChunkGenerator.FULL_CODEC);
+		});
+
+		event.register(BuiltInRegistries.BIOME_SOURCE.key(), helper -> {
+			helper.register(new ResourceLocation(IntoTheAbyssMod.MODID, "abyss_biome_source"), AbyssBiomeSource.CODEC);
+		});
+	}
+
 	// Start of user code block mod methods
 	// End of user code block mod methods
 	private static boolean networkingRegistered = false;
@@ -65,7 +82,7 @@ public class IntoTheAbyssMod {
 	private record NetworkMessage<T extends CustomPacketPayload>(FriendlyByteBuf.Reader<T> reader, IPlayPayloadHandler<T> handler) {
 	}
 
-	public static <T extends CustomPacketPayload> void addNetworkMessage(ResourceLocation id, FriendlyByteBuf.Reader<T> reader, IPlayPayloadHandler<T> handler) {
+	public 	 static <T extends CustomPacketPayload> void addNetworkMessage(ResourceLocation id, FriendlyByteBuf.Reader<T> reader, IPlayPayloadHandler<T> handler) {
 		if (networkingRegistered)
 			throw new IllegalStateException("Cannot register new network messages after networking has been registered");
 		MESSAGES.put(id, new NetworkMessage<>(reader, handler));
