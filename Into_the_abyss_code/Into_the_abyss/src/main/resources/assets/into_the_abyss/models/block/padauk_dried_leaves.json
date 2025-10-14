@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "into_the_abyss:block/padauk_dried_leaves",
+    "particle": "into_the_abyss:block/padauk_dried_leaves"
+  }
+}

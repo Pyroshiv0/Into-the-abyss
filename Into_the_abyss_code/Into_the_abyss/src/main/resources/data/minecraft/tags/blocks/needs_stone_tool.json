@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "into_the_abyss:hot_pressure_plate",
+    "into_the_abyss:hot_stone",
+    "into_the_abyss:hot_stone_slab",
+    "into_the_abyss:hot_stone_stairs",
+    "into_the_abyss:hot_stone_walls"
+  ]
+}

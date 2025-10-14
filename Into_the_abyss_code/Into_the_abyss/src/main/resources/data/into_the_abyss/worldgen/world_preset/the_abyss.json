@@ -1,0 +1,44 @@
+{
+  "dimensions": {
+    "minecraft:overworld": {
+      "type": "into_the_abyss:the_abyss",
+      "generator": {
+        "type": "into_the_abyss:abyss_chunk_generator",
+        "world_height": 2032,
+        "sea_level": 49,
+        "biome_source": {
+          "type": "into_the_abyss:abyss_biome_source",
+          "deepless_void": "into_the_abyss:deepless_void",
+          "deep_abyss": "into_the_abyss:deep_abyss",
+          "hanging_cliffs": "into_the_abyss:hanging_cliffs",
+          "twisted_sea": "into_the_abyss:twisted_sea",
+          "abyssal_ocean": "into_the_abyss:abyssal_ocean",
+          "underground_jungle": "into_the_abyss:underground_jungle",
+          "volcano_crater": "into_the_abyss:volcano_crater",
+          "volcano_beach": "into_the_abyss:volcano_beach"
+        }
+      }
+    },
+    "minecraft:the_nether": {
+      "type": "minecraft:the_nether",
+      "generator": {
+        "type": "minecraft:noise",
+        "settings": "minecraft:nether",
+        "biome_source": {
+          "type": "minecraft:multi_noise",
+          "preset": "minecraft:nether"
+        }
+      }
+    },
+    "minecraft:the_end": {
+      "type": "minecraft:the_end",
+      "generator": {
+        "type": "minecraft:noise",
+        "settings": "minecraft:end",
+        "biome_source": {
+          "type": "minecraft:the_end"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "into_the_abyss:blocks/hot_sandstone_tiles",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "into_the_abyss:hot_sandstone_tiles"
+        }
+      ]
+    }
+  ]
+}

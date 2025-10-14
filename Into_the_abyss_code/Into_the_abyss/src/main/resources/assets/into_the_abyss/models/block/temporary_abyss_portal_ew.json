@@ -1,0 +1,41 @@
+{
+  "textures": {
+    "particle": "into_the_abyss:block/hot_sand",
+    "portal": "into_the_abyss:block/hot_sand"
+  },
+  "elements": [
+    {
+      "from": [
+        6,
+        0,
+        0
+      ],
+      "to": [
+        10,
+        16,
+        16
+      ],
+      "faces": {
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#portal"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#portal"
+        }
+      }
+    }
+  ],
+  "render_type": "translucent"
+}

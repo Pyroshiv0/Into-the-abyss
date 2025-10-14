@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "into_the_abyss:block/hot_sandstone",
+    "up": "into_the_abyss:block/hot_sandstone",
+    "north": "into_the_abyss:block/hot_sandstone",
+    "east": "into_the_abyss:block/hot_sandstone",
+    "south": "into_the_abyss:block/hot_sandstone",
+    "west": "into_the_abyss:block/hot_sandstone",
+    "particle": "into_the_abyss:block/hot_sandstone"
+  },
+  "render_type": "solid"
+}
